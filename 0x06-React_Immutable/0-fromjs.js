@@ -24,7 +24,7 @@ const obj = {
 }
 
 // Log the Immutable Map result
-console.log(getImmutableObject(obj).toJS());
+console.log(getImmutableObject(obj));
 
 // Export the function
 module.exports = getImmutableObject;
