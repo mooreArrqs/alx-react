@@ -1,6 +1,6 @@
 // A function that converts an object into an immutable Map
 
-const { fromJS } = require('immutable');
+const {fromJS} = require('immutable');
 
 /**
  * Converts a JavaScript object into an immutable Map
@@ -12,6 +12,5 @@ function getImmutableObject(object) {
     return fromJS(object);
 
 module.exports = getImmutableObject;
-
 }
 
