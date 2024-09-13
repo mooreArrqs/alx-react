@@ -1,8 +1,7 @@
 // A function that converts an object into an Immutable Map
 
 // Import the fromJS method from Immutable.js
-const { fromJS } = require('immutable');
-
+import { fromJS } from 'immutable';
 
 /**
  * Converts a JavaScript object into an immutable Map.
@@ -11,21 +10,20 @@ const { fromJS } = require('immutable');
  */
 
 function getImmutableObject(object) {
-    return fromJS(object);
+  return fromJS(object);
 }
 
 // An example:
 
 const obj = {
     fear: true,
-    smell: -1033575916.9145899,
-    wall: false,
-    thing: -914767132
-}
+ smell: -1033575916.9145899,
+ wall: false,
+ thing: -914767132
+};
 
 // Log the Immutable Map result
 console.log(getImmutableObject(obj));
 
 // Export the function
-module.exports = getImmutableObject;
-
+export default getImmutableObject;
